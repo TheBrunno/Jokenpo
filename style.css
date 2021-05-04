@@ -5,14 +5,19 @@
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-h1, input, section{
+:root{
+    --cinza: #eee;
+    --preto: #222;
+}
+h1, input, section, .escolhas>div{
     box-shadow: 1px 1px 7px rgba(34, 34, 34, 0.3);
     border-radius: 5px;
+    background-color: var(--cinza);
 }
 h1{
     font-size: 5em;
-    background-color: #eee;
-    color: #222;
+
+    color: var(--preto);
     padding: 15px;
     width: 500px;
     margin: 50px auto;
@@ -29,7 +34,7 @@ input{
 }
 input#jogada{
     width: 230px;
-    background-color: #eee;
+    /* background-color: var(--cinza); */
 }
 input#jogada:focus{
     width: 300px;
@@ -60,7 +65,6 @@ section{
     box-sizing: border-box;
     width: 50%;
     padding: 20px;
-    background-color: #eee;
     transition: 0.7s;
     font-size: 1.2em;
     height: 250px;
@@ -69,7 +73,7 @@ main section>h2{
     color: orange;
     font-size: 2em;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgba(34, 34, 34, 0.3);
+    text-shadow: 1px 1px 2px #2222224d;
 }
 main section>p{
     text-align: justify;
@@ -83,4 +87,36 @@ section:hover{
 }
 .destaque{
     font-weight: bold;
+}
+.escolhas{
+    margin: 50px 150px 0 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.escolhas > div{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: auto 160px;
+    background-position: bottom;
+    transition: 0.5s;
+}
+.escolhas div > p{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.escolhas > div:hover{
+    width: 250px;
+    background-color: #e2e2e2;
+}
+#tesoura{
+    background-image: url(img/tesoura.png);
+}
+#pedra{
+    background-image: url(img/pedra.png);
+}
+#papel{
+    background-image: url(img/papel.png);
 }
