@@ -4,13 +4,13 @@
         var resp;
         var invalid;
         btn.onclick = function(){
-            var jog = Number(document.getElementById("jogada").value)
+            var jog = String(document.getElementById("jogada").value).toLocaleLowerCase()
             invalid = false
-            if(jog == 1){
+            if(jog == '1' || jog == 'pedra'){
                 resp = 'Pedra'
-            }else if(jog == 2){
+            }else if(jog == '2' || jog == 'papel'){
                 resp = 'Papel'
-            }else if(jog == 3){
+            }else if(jog == '3' || jog == 'tesoura'){
                 resp = 'Tesoura'
             }else{
                 alert('Insira números válidos')
