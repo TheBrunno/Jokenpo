@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jokenpô</h1>
+    <h1><div id="circle-1"></div><span id="title">Jokenpô</span><div id="circle-2"></div></h1>
     <input type="text" id="jogada" placeholder="Digite sua jogada">
     <input type="button" id="botao" value="Continuar">
     <p>ou clique:</p>
@@ -19,12 +19,12 @@
     </div>
     <main>
         <section id="left-sec">
-            <h2>Como funciona?</h2>
+            <h2 id="como-func">Como funciona?</h2>
             <p>Caso você não saiba, jokenpô é um jogo em que as pessoas jogam com as mãos, escolhendo entre <span class="destaque">pedra</span>, <span class="destaque">papel</span> e <span class="destaque">tesoura</span>. E funciona assim: a <span class="destaque">tesoura corta o papel</span>, <span class="destaque">mas quebra com a pedra</span>; <span class="destaque">o papel embrulha a pedra</span>, <span class="destaque">mas é cortado pela tesoura</span> e a <span class="destaque">pedra quebra a tesoura e é embrulhada pelo papel</span>.</p>
         </section>
         <section id="right-sec">
-            <h2>Como jogar?</h2>
-            <p>Para jogar Jokenpô aqui, basta inserir sua jogada no campo acima.</p>
+            <h2 id="como-jogar">Como jogar?</h2>
+            <p>Basta clicar nas opções acima ou inserir o nome ou o numero da sua jogada no campo</p>
             <p>Você pode digitar o nome da jogada, ou o número da jogada</p>
             <ul>
                 <li><span class="destaque">[ 1 ]</span> - <span class="destaque">Pedra</span></li>
@@ -33,6 +33,7 @@
             </ul>
         </section>
     </main>
+    <label><input type="checkbox" id="check"> Mais detalhes sobre as partidas</label>
     <script src="script.js"></script>
 </body>
 </html>
